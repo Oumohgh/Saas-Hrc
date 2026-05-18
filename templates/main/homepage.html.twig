@@ -1,2 +1,11 @@
+{% extends 'base.html.twig'  %}
+{% block title %}Lalala{% endblock %}
+ {% block body %}
 <h1> hii
 </h1>
+<h2>
+<strong>nombre de cv :{{ resumeNumber *2 }}  cv</strong></h2>
+{% if resumeNumber === 400 %}
+<p>   il y a plus que 400 cv</p>
+{% endif %}
+{% endblock %}

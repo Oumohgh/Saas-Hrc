@@ -7,9 +7,13 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class MainController extends AbstractController
 {
-    #[Route('/')]
-    public function homepage()
-    {
-        return $this->render('main/homepage.html.twig');
+
+#[Route('/')]
+    public function Homepage(){
+
+    $resumeCount=200;
+        return $this->render('main/homepage.html.twig',[
+            'resumeNumber'=>$resumeCount,
+        ]);
     }
 }
